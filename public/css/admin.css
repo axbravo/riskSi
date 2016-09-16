@@ -1,0 +1,15 @@
+body{
+    margin-top: 70px;
+}
+
+span.error{
+	color:#a94442;
+}
+
+legend {
+    padding-top: 20px;
+}
+.error-small{
+    margin-bottom: 5px;
+    padding: 2px 15px;
+}

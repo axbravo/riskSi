@@ -1,0 +1,229 @@
+/*
+	Monochromed by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+@import url("font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
+
+@charset 'UTF-8';
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+span.error{
+	color:#a94442;
+}
+
+
+.icon {
+		text-decoration: none;
+		position: relative;
+		display: inline-block;
+	}
+
+		.icon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+		}
+
+		.icon.circle {
+			-moz-transition: all 0.2s ease-in-out;
+			-webkit-transition: all 0.2s ease-in-out;
+			-ms-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+			border: 0;
+			border-radius: 100%;
+			display: inline-block;
+			font-size: 1.25em;
+			height: 2.25em;
+			left: 0;
+			line-height: 2.25em;
+			text-align: center;
+			text-decoration: none;
+			top: 0;
+			width: 2.25em;
+		}
+
+			.icon.circle:hover {
+				top: -0.2em;
+			}
+
+			.icon.circle.fa-twitter {
+				background: #70aecd;
+				color: #fff;
+			}
+
+				.icon.circle.fa-twitter:hover {
+					background: #7fb7d2;
+				}
+
+			.icon.circle.fa-facebook {
+				background: #7490c3;
+				color: #fff;
+			}
+
+				.icon.circle.fa-facebook:hover {
+					background: #829bc9;
+				}
+
+			.icon.circle.fa-google-plus {
+				background: #db6b67;
+				color: #fff;
+			}
+
+				.icon.circle.fa-google-plus:hover {
+					background: #df7b77;
+				}
+
+			.icon.circle.fa-github {
+				background: #dcad8b;
+				color: #fff;
+			}
+
+				.icon.circle.fa-github:hover {
+					background: #e1b89b;
+				}
+
+			.icon.circle.fa-dribbble {
+				background: #da83ae;
+				color: #fff;
+			}
+
+				.icon.circle.fa-dribbble:hover {
+					background: #df93b8;
+				}
+
+		.icon.featured {
+			cursor: default;
+			display: block;
+			margin: 0 0 1.5em 0;
+			opacity: 0.35;
+			text-align: center;
+		}
+
+			.icon.featured:before {
+				font-size: 5em;
+				line-height: 1em;
+			}
+
+		.icon > .label {
+			display: none;
+		}
+
+
+	#footer {
+		background: #E8EEF4;
+		color: #7c8081;
+		padding: 5em 5em 10em 5em;
+		text-align: center;
+
+	}
+
+	#footer .copyright {
+		font-size: 0.8em;
+		line-height: 1em;
+		display: inline-block;
+	}
+
+	#footer .copyright a {
+		color: inherit;
+	}
+
+	#footer .copyright li {
+		display: inline-block;
+		margin-left: 1em;
+		padding-left: 1em;
+		border-left: dotted 1px;
+	}
+
+	#footer .copyright li:first-child {
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+
+	#botones{
+		background: #5bde79;
+		color:white; 
+	}
+
+	#cabecera{
+		color:  #5bde79;
+		font-style:bold ;
+	}
+
+	#cabecera:hover {
+					color: white;
+	}
+
+	#portada{
+		color: white;
+		font-size: 50pt;
+		font-family: sans-serif;
+	}
+
+
+	body,input,textarea,select
+	{
+		font-family: 'Oxygen', sans-serif;
+		font-size: 13pt;
+		line-height: 2em;
+	}
+
+	h1,h2,h3,h4,h5,h6
+	{
+		font-weight: bold;
+	}
+	
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+	{
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.button:hover
+	{
+		background: #5bde79;
+		color: #FFF !important;
+	}
+	/*
+	ul li{
+		display: inline-block;
+	}
+	*/
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+		position: relative;
+		background: #ddd url(../images/portada.png) no-repeat center;
+		background-size: cover;
+	}
+
+	.navbar{
+		border-radius: 0;
+	}
+	
+
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+	
+	#footer
+	{
+		position: relative;
+		background: #5bde79;
+		color: rgba(255,255,255,.4);
+	}
+	
+
+		
