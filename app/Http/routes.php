@@ -212,6 +212,7 @@ Route::group(['middleware' => ['auth', 'projectmanager']], function () {
 
     Route::get('projectManager/task', ['as' => 'projectManager.task.index', 'uses' =>'RiskController@index']);
     Route::get('projectManager/task/new', 'RiskController@create');
+    Route::get('projectManager/issuelog', ['as' => 'projectManager.issuelog.index', 'uses' =>'RiskController@issuelog']);
     Route::post('projectManager/task/new', ['as' => 'task.store', 'uses' =>'RiskController@store']);
     Route::get('projectManager/task/{id}/check', ['as' => 'task.check', 'uses' =>'RiskController@check']);
     Route::post('projectManager/task/{id}/check', ['as' => 'task.checkPost', 'uses' =>'RiskController@checkPost']);
@@ -225,6 +226,7 @@ Route::group(['middleware' => ['auth', 'projectmanager']], function () {
 
     Route::post('projectManager/task/{id}/delete', ['as' => 'task.delete', 'uses' =>'RiskController@destroy']);
     Route::get('projectManager/task/{id}/subrisks', ['as' => 'task.indexRiskR', 'uses' =>'RiskController@indexSub']);
+     Route::get('projectManager/issue/{id}/subrisks', ['as' => 'issuelog.indexRiskR', 'uses' =>'RiskController@indexSubissue']);
 })  ; 
 
 Route::get('token',function(){

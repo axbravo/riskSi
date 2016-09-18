@@ -43,6 +43,16 @@ class RiskController extends Controller
          
         return view('internal.projectmanager.catalogs', ['risks' => $risks, 'subrisks' => $subcat_list]);
     }
+     public function issuelog()
+    {
+        $risks = Risk::where("type" ,'1')->paginate(10);
+        $subcat_list = [];
+        foreach ($risks as $risk) {
+            $subcat_list[$risk->name] = $this->getsubrisks($risk->id);
+        }
+         
+        return view('internal.projectmanager.issuelogs', ['risks' => $risks, 'subrisks' => $subcat_list]);
+    }
     public function indexRiskM()
     {   $id = Auth::user()->id;
         $risks = Risk::where('type',1)->paginate(10);
@@ -109,6 +119,16 @@ class RiskController extends Controller
         $subrisks = Risk::where('father_id',$id)->paginate(10);
         $subrisks->setPath('subrisks');
         return view('internal.projectmanager.risks',['risk'=>$risk,"subrisks"=>$subrisks,'subrisks_pure'=>$subrisks_pure]);
+    }
+
+     public function indexSubissue($id)
+    {
+        $risk = Risk::findOrFail($id);
+        $subrisks_pure = Risk::where(["father_id"=>$id,"state" =>'Terminado'])->get();
+        
+        $subrisks = Risk::where(["father_id"=>$id,"state" =>'Terminado'])->paginate(10);
+        $subrisks->setPath('subrisks');
+        return view('internal.projectmanager.issues',['risk'=>$risk,"subrisks"=>$subrisks,'subrisks_pure'=>$subrisks_pure]);
     }
 
     public function indexSubRiskM($id)

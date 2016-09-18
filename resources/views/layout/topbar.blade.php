@@ -233,6 +233,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="{{url('projectManager/task')}}">Listar</a></li>
                         <li><a href="{{url('projectManager/task/new')}}">Nuevo</a></li>
+                        <li><a href="{{url('projectManager/issuelog')}}">Issue Log</a></li>
                     </ul>
                     
                 </li>           
